@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahadev Wallpaper</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at center, rgba(82,160,255,0.25) 0%, rgba(9,24,52,0.95) 35%, #020814 75%, #000 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .glow {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(135,206,255,0.85) 0%, rgba(0,153,255,0.25) 45%, rgba(0,0,0,0) 75%);
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: blur(18px);
+    }
+
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .title {
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      text-align: center;
+      color: #dff6ff;
+      font-size: 42px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      text-shadow: 0 0 15px rgba(100,180,255,0.8);
+    }
+
+    .subtitle {
+      position: absolute;
+      bottom: 35px;
+      width: 100%;
+      text-align: center;
+      color: #9fd3ff;
+      font-size: 22px;
+      letter-spacing: 4px;
+      text-shadow: 0 0 12px rgba(100,180,255,0.6);
+    }
+
+    .stars {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #fff;
+      animation: twinkle 2.5s infinite alternate;
+    }
+
+    @keyframes twinkle {
+      from { opacity: 0.3; transform: scale(1); }
+      to { opacity: 1; transform: scale(1.8); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="stars">
+      <div class="star" style="top:8%; left:12%; animation-delay:0s;"></div>
+      <div class="star" style="top:16%; left:84%; animation-delay:1s;"></div>
+      <div class="star" style="top:24%; left:22%; animation-delay:0.7s;"></div>
+      <div class="star" style="top:30%; left:73%; animation-delay:1.8s;"></div>
+      <div class="star" style="top:12%; left:55%; animation-delay:0.4s;"></div>
+      <div class="star" style="top:40%; left:10%; animation-delay:1.5s;"></div>
+      <div class="star" style="top:45%; left:88%; animation-delay:0.9s;"></div>
+      <div class="star" style="top:20%; left:66%; animation-delay:1.3s;"></div>
+    </div>
+
+    <div class="title">HAR HAR MAHADEV</div>
+    <div class="glow"></div>
+
+    <svg viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
+      <!-- Moon -->
+      <circle cx="580" cy="180" r="34" fill="#fff9d6" opacity="0.95"/>
+      <circle cx="593" cy="177" r="30" fill="#071427"/>
+
+      <!-- Halo -->
+      <circle cx="450" cy="380" r="170" fill="none" stroke="rgba(130,200,255,0.45)" stroke-width="8"/>
+      <circle cx="450" cy="380" r="220" fill="none" stroke="rgba(130,200,255,0.15)" stroke-width="16"/>
+
+      <!-- Trishul -->
+      <g transform="translate(700,260)">
+        <rect x="-6" y="40" width="12" height="380" rx="6" fill="#d8a648"/>
+        <path d="M0 0
+                 C-18 20 -24 52 -18 84
+                 C-8 63 -1 48 0 28
+                 C1 48 8 63 18 84
+                 C24 52 18 20 0 0Z"
+              fill="#f0c15d"/>
+        <path d="M-42 35
+                 C-75 70 -64 128 -20 148
+                 C-28 112 -16 80 -2 58
+                 L-2 35Z"
+              fill="#f0c15d"/>
+        <path d="M42 35
+                 C75 70 64 128 20 148
+                 C28 112 16 80 2 58
+                 L2 35Z"
+              fill="#f0c15d"/>
+        <line x1="-30" y1="175" x2="35" y2="150" stroke="#d96b5f" stroke-width="8" stroke-linecap="round"/>
+      </g>
+
+      <!-- Body silhouette -->
+      <path d="
+        M300 760
+        C330 650 380 600 450 600
+        C520 600 570 650 600 760
+        L300 760 Z"
+        fill="#02060d"/>
+
+      <!-- Neck -->
+      <path d="
+        M395 575
+        C405 610 495 610 505 575
+        L520 650
+        C485 665 415 665 380 650
+        Z"
+        fill="#0c3c69"/>
+
+      <!-- Face silhouette -->
+      <path d="
+        M450 200
+        C355 200 300 285 305 385
+        C310 470 365 555 450 555
+        C535 555 590 470 595 385
+        C600 285 545 200 450 200
+        Z"
+        fill="#02060d"/>
+
+      <!-- Hair / Jata -->
+      <path d="
+        M285 250
+        C250 350 270 520 355 590
+        C390 618 510 618 545 590
+        C630 520 650 350 615 250
+        C585 150 520 110 450 105
+        C380 110 315 150 285 250
+        Z"
+        fill="#000"/>
+
+      <!-- Top Jata bun -->
+      <ellipse cx="450" cy="140" rx="105" ry="60" fill="#000"/>
+
+      <!-- Ganga line -->
+      <path d="
+        M425 145
+        C410 180 412 220 425 255
+        C435 285 430 315 415 345"
+        fill="none"
+        stroke="#bfefff"
+        stroke-width="8"
+        stroke-linecap="round"
+        opacity="0.9"/>
+
+      <!-- Forehead lines -->
+      <line x1="390" y1="290" x2="510" y2="290" stroke="#d9f3ff" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+      <line x1="380" y1="320" x2="520" y2="320" stroke="#d9f3ff" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+      <line x1="392" y1="350" x2="508" y2="350" stroke="#d9f3ff" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+
+      <!-- Third eye -->
+      <path d="
+        M450 245
+        C435 260 435 285 450 298
+        C465 285 465 260 450 245 Z"
+        fill="#42bfff"
+        stroke="#dff7ff"
+        stroke-width="3"/>
+
+      <!-- Nose light -->
+      <path d="
+        M450 380
+        C440 420 442 452 450 475
+        C458 452 460 420 450 380 Z"
+        fill="rgba(110,190,255,0.35)"/>
+
+      <!-- Mouth light -->
+      <path d="M410 500 Q450 520 490 500" fill="none" stroke="rgba(160,220,255,0.7)" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- Snake -->
+      <path d="
+        M350 645
+        C390 620 500 620 545 645
+        C565 655 570 680 550 692
+        C515 712 390 712 350 695
+        C325 684 328 657 350 645
+        Z"
+        fill="#aab79d"/>
+
+      <ellipse cx="555" cy="668" rx="28" ry="20" fill="#bac7ad"/>
+      <circle cx="563" cy="663" r="3" fill="#111"/>
+      <circle cx="573" cy="663" r="3" fill="#111"/>
+      <path d="M582 670 L600 674 L582 678" fill="#d6525b"/>
+
+      <!-- Rudraksha -->
+      <circle cx="390" cy="700" r="10" fill="#743b1d"/>
+      <circle cx="420" cy="714" r="10" fill="#743b1d"/>
+      <circle cx="450" cy="720" r="10" fill="#743b1d"/>
+      <circle cx="480" cy="714" r="10" fill="#743b1d"/>
+      <circle cx="510" cy="700" r="10" fill="#743b1d"/>
+
+      <!-- Damru -->
+      <g transform="translate(235,685) rotate(-25)">
+        <rect x="0" y="0" width="10" height="110" rx="5" fill="#8d5f36"/>
+        <path d="M-22 18 Q5 -5 32 18 Q5 42 -22 18Z" fill="#cf9b5d" stroke="#6b4428" stroke-width="3"/>
+        <path d="M-22 60 Q5 37 32 60 Q5 84 -22 60Z" fill="#cf9b5d" stroke="#6b4428" stroke-width="3"/>
+        <line x1="-12" y1="39" x2="22" y2="39" stroke="#b03f35" stroke-width="5"/>
+      </g>
+    </svg>
+
+    <div class="subtitle">ॐ NAMAH SHIVAYA</div>
+  </div>
+</body>
+</html>
